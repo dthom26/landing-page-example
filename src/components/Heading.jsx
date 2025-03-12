@@ -1,6 +1,6 @@
 import React from "react";
 
-const Heading = ({ className, title }) => {
+const Heading = ({ className, title, text }) => {
   return (
     <div className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20`}>
       {title && (
@@ -10,6 +10,11 @@ const Heading = ({ className, title }) => {
         >
           {title}
         </h2>
+      )}
+      {text && (
+        <p className="font-light text-[0.875rem] leading-6 md:text-base mt-4 text-[#757185]">
+          {text}
+        </p>
       )}
     </div>
   );
