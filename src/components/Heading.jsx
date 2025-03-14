@@ -1,8 +1,12 @@
 import React from "react";
+import Tagline from "./Tagline";
 
-const Heading = ({ className, title, text }) => {
+const Heading = ({ className, title, text, tag }) => {
   return (
-    <div className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20`}>
+    <div
+      className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center`}
+    >
+      {tag && <Tagline className="mb-4 md:justify-center">{tag}</Tagline>}
       {title && (
         <h2
           className="text-[1.75rem] leading-[2.5rem] md:text-[2rem] md:leading-[2.5rem] 
