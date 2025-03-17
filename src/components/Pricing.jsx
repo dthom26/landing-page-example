@@ -8,7 +8,7 @@ import { LeftLine, RightLine } from "./design/Pricing";
 
 function Pricing() {
   return (
-    <Section className="overflow-hidden" id={pricing}>
+    <Section className="overflow-hidden" id="pricing">
       <div className="max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem] relative z-2">
         <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
           <img
